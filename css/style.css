@@ -632,29 +632,52 @@ body::before {
   }
 }
 
-/* ---------- Client readability and balanced layout ---------- */
-body { font-size: 1.0625rem; line-height: 1.8; }
-.kicker { font-size: .875rem; font-weight: 700; letter-spacing: .08em; margin-bottom: 1rem; color: var(--violet); }
-.hero-role { color: var(--violet); }
-.hero-sub { font-size: clamp(1.5rem, 2.5vw, 2rem); font-weight: 600; line-height: 1.35; margin-bottom: 1.25rem; }
-.lead-text { font-family: var(--font-body); font-size: clamp(1.0625rem, 1.5vw, 1.1875rem); font-weight: 400; line-height: 1.85; color: #3a3550; max-width: 46rem; }
-.page-head .lead-text, .hero .lead-text { padding-left: 1.25rem; border-left: 3px solid var(--violet); }
+/* ---------- Client revision: larger type and centred text ---------- */
+body { font-size: clamp(1.125rem, 1rem + .25vw, 1.25rem); line-height: 1.75; }
+main, .site-footer { text-align: center; }
+.hero h1 { font-size: clamp(2.75rem, 5.6vw, 5rem); line-height: 1.1; }
+.page-head h1 { font-size: clamp(2.5rem, 5.4vw, 4.75rem); line-height: 1.12; max-width: 62rem; margin-inline: auto; }
+h2 { font-size: clamp(2.25rem, 4.3vw, 3.5rem); }
+.feature h3 { font-size: clamp(2rem, 3.8vw, 3rem); }
+.kicker { font-size: 1rem; font-weight: 700; letter-spacing: .08em; margin-bottom: 1rem; color: var(--violet); }
+.hero-role { color: var(--violet); font-size: 1.25rem; justify-content: center; }
+.hero-sub { font-size: clamp(1.75rem, 2.8vw, 2.25rem); font-weight: 600; line-height: 1.35; margin-bottom: 1.25rem; }
+.lead-text { font-family: var(--font-body); font-size: clamp(1.25rem, 1.1rem + .4vw, 1.5rem); font-weight: 400; line-height: 1.75; color: #3a3550; max-width: 48rem; }
+.page-head .lead-text, .hero .lead-text { padding-left: 0; border-left: 0; }
 .page-head .lead-text { margin-top: 1.5rem; }
 #categories .lead-text { max-width: 48rem; padding-left: 0; border: 0; }
 .prose { max-width: 44rem; }
-.feature .muted { font-size: 1.0625rem; }
-.meta dd { font-size: 1.0625rem; }
-.meta dt { font-size: .875rem; }
+.prose, .lead-text, .pull, .cta-band h2, .cta-band p, .site-footer p { margin-inline: auto; }
+.feature .muted { font-size: 1.125rem; }
+.meta, .stats, .filters { justify-content: center; }
+.meta dd { font-size: 1.125rem; }
+.meta dt { font-size: 1rem; }
+.stat-num { font-size: 3.25rem; }
+.stat-label { font-size: 1.0625rem; }
+.section-head h2::after, .page-head h1::after { margin-inline: auto; }
+.card-work { text-align: center; }
+.card-work h3 { font-size: 1.375rem; line-height: 1.35; }
+.card-work p, .gallery-item figcaption { font-size: 1.0625rem; line-height: 1.65; }
+.cat-card h3 { font-size: 1.25rem; }
+.cat-card span { font-size: 1rem; line-height: 1.6; }
+.btn, .filter-btn, .form-label { font-size: 1.0625rem; }
+.site-nav .nav-link, .site-nav .dropdown-item { font-size: 1rem; text-align: center; }
+.contact-list .label { font-size: 1rem; }
+.contact-list a { font-size: 1.25rem; }
+.form-control, .form-select { font-size: 1.125rem; text-align: center; }
+.site-footer { font-size: 1.0625rem; }
+.site-footer h4 { font-size: 1.2rem; }
+.footer-bottom { font-size: 1rem; }
 
 /* Natural word spacing helps scanning at every screen width. */
 p, .prose, .lead-text, .muted, .card-work p, .cta-band p, .gallery-item figcaption {
-  text-align: start;
+  text-align: center;
   hyphens: none;
   overflow-wrap: break-word;
 }
 .text-center p, .text-center .lead-text, .section-head.text-center .lead-text { text-align: center; }
 .cat-card span, .btn, .lightbox .lb-caption { text-align: center; }
-.hero-role, .kicker { text-align: start; }
+.hero-role, .kicker { text-align: center; }
 .text-center .kicker { text-align: center; }
 
 /* Centre artwork within its columns; keep the original images uncropped. */
@@ -677,7 +700,7 @@ p, .prose, .lead-text, .muted, .card-work p, .cta-band p, .gallery-item figcapti
 
 @media (max-width: 575.98px) {
   .hero-art { max-width: 360px; }
-  .kicker { font-size: .8125rem; letter-spacing: .06em; }
+  .kicker { font-size: .9375rem; letter-spacing: .06em; }
   .brand-logo img, .site-nav.is-scrolled .brand-logo img { height: auto; width: min(60vw, 230px); }
   .gallery-item, .doc-frame { max-width: 100%; }
   .cat-card img { width: 130px; }

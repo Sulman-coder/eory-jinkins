@@ -10,7 +10,7 @@ Open `index.html` to review it, or serve the folder with `python -m http.server 
 | Use only three clear, readable fonts | Complete: Montserrat for main headings/navigation, Poppins for body/controls, Playfair Display for section headings/editorial accents. Font files and SIL Open Font Licenses are included. Artwork and the supplied logo can contain their own lettering. |
 | Correct wording | Corrected the obvious “Bill Board” typo, two artwork descriptions that did not match the displayed illustrations, and misleading contact button wording. The client's exact replacement copy was not included in the request and remains pending. |
 | Add two illustrations and their thumbnails | Pending receipt/identification of the two approved originals, matching thumbnails, titles, descriptions and preferred order. Existing artwork is preserved. Do not assume that unused images are the approved additions. |
-| Balance the layout | Complete in local code: consistent illustration columns, centred artwork, uncropped images, improved mobile sizing, readable paragraph widths and natural word spacing. English paragraphs remain left aligned; there is no need to move all text to the right. |
+| Balance the layout | Complete in local code: consistent illustration columns, centred artwork, uncropped images, improved mobile sizing, readable paragraph widths and natural word spacing. Client revision: headings, paragraphs, cards, captions, contact text and footer are now centre aligned. Body text scales from 18 to 20 px, introductory text from 20 to 24 px, home headings up to 80 px and inner-page headings up to 76 px. Responsive sizing preserves readability on phones. |
 | Provide a complete ZIP | `artifacts/rory-jenkins-updated.zip` contains the updated HTML, CSS, JavaScript, all supplied images, resume PDF, local fonts, Bootstrap and their licenses. `artifacts/rory-jenkins-original.zip` preserves the original supplied files. |
 | Hosting, Wix domain and administrative access | Pending account access and chosen hosting destination. No live deployment or DNS changes have been made. |
 
@@ -37,3 +37,7 @@ This is a static HTML website. Connecting its domain does not make these files e
 ## Validation
 
 See `artifacts/verification.txt` for the source and local HTTP checks. Browser QA covers representative pages and interactions; it is not a guarantee of every browser/device combination. New images, exact copy corrections and live hosting verification remain pending.
+
+## Visible typography revision ? 15 November 2026
+
+The latest client revision increases text sizes and centres text across all 13 pages. Constrained paragraphs, header accents, project metadata, filters, statistics and CTA text are also centred within their sections or columns. The stylesheet URL has a new version suffix so browsers request this revision after upload. Upload all HTML files and css/style.css together, or use the refreshed complete ZIP.
